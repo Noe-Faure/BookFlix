@@ -135,12 +135,12 @@ body {
     fill: white;
 }
 
-#quotation-of-the-day {
+.main-title {
     font-size: 1.5em;
     margin: 0;
 }
 
-#quotation-of-the-day::after {
+.main-title::after {
     content: '';
     width: 3em;
     height: 0.1em;
@@ -195,4 +195,116 @@ body {
     position: absolute;
     right: 2.7em;
     margin-top: 7px;
+}
+
+.like-section {
+    margin-top: 0.5em;
+    font-size: 0.8em;
+    text-align: right;
+}
+
+.like-section svg {
+    cursor: pointer;
+    margin-bottom: -3px;
+    margin-right: 6px;
+}
+
+.new-content {
+    margin-top: 1.5em;
+}
+
+#carroussel-books {
+    display: flex;
+    margin-top: 3em;
+}
+
+.book-couv {
+    box-shadow: 0px 1px 15px rgba(50, 50, 93, 0.25), 0 1px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 0.5em;
+    cursor: pointer;
+    transition: 0.2s;
+    position: relative;
+}
+
+.book-couv:hover {
+    transform: translateY(-5px);
+}
+
+.book-couv img{
+    background-position: center;
+    background-size: cover;
+    width: 200px;
+    height: 260px;
+    border-radius: 0.5em 0.5em 0 0;
+}
+
+.height-book {
+    height: 40px;
+    width: 200px;
+    background-color: #fcd9b0;
+    border-radius: 0.5em;
+    margin-top: -20px;
+}
+
+.height-couv {
+    height: 2px;
+    position: absolute;
+    background-color: #293241;
+    width: 170px;
+    margin-top: -5px;
+}
+
+.book-mark {
+    width: 1.5em;
+    height: 1.5em;
+    position: absolute;
+    z-index: 2;
+    margin-top: -5px;
+    transform: translate(165px, 0px);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.st0{fill:#FFFFFF;}
+.st1{fill:#FFFFFF;}
+
+.book-mark:hover .st1{
+    fill: #ffa83f;
+}
+
+.book-mark:hover .st0{
+    fill: #ffa83f;
+}
+
+.book-couv:hover .book-mark{
+    transform: translate(165px, -5px);
+}
+
+.book-name-current {
+    margin-top: 1.5em;
+    font-weight: bold;
+}
+
+.book-author-current {
+    margin-top: 0.2em;
+}
+
+.book {
+    margin-right: 3em;
+}
+
+.next-left {
+    width: 80px;
+    text-align: center;
+    padding-top: 105px;
+}
+
+.next-left svg {
+    fill: #ffa83f;
+    box-shadow: 0px 1px 15px rgba(50, 50, 93, 0.015), 0 1px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    width: 50px;
+    font-size: 50px;
+    height: 50px;
+    cursor: pointer;
 }
