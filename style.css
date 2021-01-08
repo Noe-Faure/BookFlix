@@ -18,6 +18,7 @@ body {
     width: 80vw;
     height: calc(100vh - 3em);
     padding: 1.5em;
+    padding: 1.5em 3em 1.5em 3em;
 }
 
 #left-nav-bar {
@@ -132,4 +133,66 @@ body {
     margin-right: 1em;
     margin-bottom: -3px;
     fill: white;
+}
+
+#quotation-of-the-day {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+#quotation-of-the-day::after {
+    content: '';
+    width: 3em;
+    height: 0.1em;
+    background-color: #ffefdc;
+    display: flex;
+    position: absolute;
+    margin-top: 7px;
+}
+
+.quotation-container {
+    font-size: 1.2em;
+    margin-top: 2em;
+    display: flex;
+}
+
+.quotation {
+    width: 70%;
+    text-align: justify;
+}
+
+.quotation-piece {
+    text-align: right;
+    width: 30%;
+    margin-top: -1.2em;
+}
+
+.quotation-piece .author {
+    font-size: 1.2em;
+    font-weight: 800;
+    margin-bottom: 0.1em;
+}
+
+.quotation-piece .book-name {
+    font-size: 0.9em;
+}
+.quotation-piece .parution {
+    font-size: 0.9em;
+}
+
+.quotation-piece .go-to-book {
+    font-size: 0.9em;
+    margin-top: 1.5em;
+    cursor: pointer;
+}
+
+.quotation-piece .go-to-book::after {
+    content: '';
+    width: 3em;
+    height: 0.15em;
+    background-color: #ffa83f;
+    display: flex;
+    position: absolute;
+    right: 2.7em;
+    margin-top: 7px;
 }
