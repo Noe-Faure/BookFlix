@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Dosis;
+    color: #293241;
+}
+
+#main-container {
+    display: flex;
+}
+
+#main-page {
+    width: 80vw;
+    height: calc(100vh - 3em);
+    padding: 1.5em;
+}
+
+#left-nav-bar {
+    width: 20vw;
+    height: calc(100vh - 3em);
+    background-color: #ffa83f;
+    padding: 1.5em;
+}
+
+#logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#brand {
+    font-size: 1.7em;
+    font-weight: 600;
+}
+
+#logo {
+    margin-right: 1em;
+}
+
+#search-book {
+    background-color: #fec98b;
+    color: white;
+    border-radius: 0 0.5em 0.5em 0;
+    width: calc(20vw - 3em);
+    padding: 1em;
+    border: none;
+}
+
+#search-book::placeholder {
+    color: #fdead5;
+}
+
+#search-container {
+    display: flex;
+    margin-top: 2em;
+}
+
+#search-logo {
+    background-color: #fec98b;
+    color: white;
+    border-radius: 0.5em 0 0 0.5em;
+    padding: 1em;
+    font-size: 0.8em;
+    height: min-content;
+}
+
+#version {
+    position: absolute;
+    bottom: 1em;
+    color:white;
+}
