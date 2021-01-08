@@ -138,6 +138,7 @@ body {
 .main-title {
     font-size: 1.5em;
     margin: 0;
+    width: 68%;
 }
 
 .main-title::after {
@@ -307,4 +308,32 @@ body {
     font-size: 50px;
     height: 50px;
     cursor: pointer;
+    transition: 0.2s;
+}
+
+.next-left svg:hover {
+    transform: translateX(5px);
+}
+
+#horizontal-menu {
+    display: flex;
+}
+
+.horizontal-menu-item {
+    display: flex;
+    margin-left: auto;
+    padding: 0.3em 1em 0.3em 1em;
+    border-radius: 0.5em;
+    transition: 0.2s;
+    cursor: pointer;
+    background-color: #f0f5ff;
+}
+
+.horizontal-menu-item:hover {
+    background-color: #d6e4ff;
+}
+
+.horizontal-menu-item svg {
+    margin-right: 0.7em;
+    padding-top: 3px;
 }
